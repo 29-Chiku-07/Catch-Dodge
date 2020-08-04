@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (hitCheck(pinkCenterX, pinkCenterY)) {
                 pinkY = frameHeight + 30;
-                score += 1000;
+                score += 30;
 
                 //change frame width
                 if(initialFrameWidth > frameWidth * 110/100){
