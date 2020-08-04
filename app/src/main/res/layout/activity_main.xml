@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg12">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="Score : 0"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:transformPivotX="@android:dimen/app_icon_size" />
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/sky"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="44dp"
+            android:layout_height="42.5dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/box1"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:src="@drawable/blackb"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/red1"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/yellow"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="404dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/highScoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="High Score : 300"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#91CDEC"
+                android:onClick="startGame"
+                android:text="START"
+                android:textSize="24dp"
+                android:textStyle="normal" />
+
+            <Button
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#91CDEC"
+                android:onClick="quitGame"
+                android:text="QUIT"
+                android:textSize="24dp" />
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>
